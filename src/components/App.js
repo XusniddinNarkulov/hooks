@@ -3,6 +3,7 @@ import Dropdown from "./dropDown";
 import Accordion from "./Accordion";
 import Youtube from "./youtube/youtube";
 import Unsplash from "./unsplash/unsplash";
+import Season from "./season/season";
 // import Search from "./search";
 // import Translate from "./translate";
 
@@ -55,6 +56,7 @@ const App = () => {
          {/* <Search /> */}
          {/* <Youtube /> */}
          <Unsplash />
+         <Season />
       </div>
    );
 };
