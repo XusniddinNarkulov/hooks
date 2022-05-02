@@ -1,5 +1,9 @@
 import React from "react";
+import Dropdown from "./dropDown";
 import Accordion from "./Accordion";
+import Youtube from "./youtube/youtube";
+// import Search from "./search";
+// import Translate from "./translate";
 
 const accordionData = [
    {
@@ -26,10 +30,29 @@ const accordionData = [
    },
 ];
 
+const dataDropdown = [
+   {
+      label: "The Color Red",
+      value: "red",
+   },
+   {
+      label: "The Color Green",
+      value: "green",
+   },
+   {
+      label: "The Color Blue",
+      value: "blue",
+   },
+];
+
 const App = () => {
    return (
       <div>
          <Accordion data={accordionData} />
+         <Dropdown data={dataDropdown} />
+         {/* <Translate /> */}
+         {/* <Search /> */}
+         <Youtube />
       </div>
    );
 };

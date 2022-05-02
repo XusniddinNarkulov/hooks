@@ -1,0 +1,8 @@
+.videoList {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+   gap: 2%;
+   /* margin-top: 3%; */
+   overflow-y: scroll;
+   width: 100%;
+}
