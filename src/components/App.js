@@ -56,8 +56,14 @@ const App = () => {
          <Navbar />
          <Routes>
             {/* <Route path="/" exact element={<Accordion />} /> */}
-            <Route path="/accordion" element={<Accordion />} />
-            <Route path="/dropdown" element={<Dropdown />} />
+            <Route
+               path="/accordion"
+               element={<Accordion data={accordionData} />}
+            />
+            <Route
+               path="/dropdown"
+               element={<Dropdown data={dataDropdown} />}
+            />
             {/* <Route path="/translate" element={Translate} /> */}
             {/* <Route path="/wiki" element={Search} /> */}
             <Route path="/youtube" element={<Youtube />} />
