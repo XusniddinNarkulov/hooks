@@ -4,6 +4,9 @@ import Accordion from "./Accordion";
 import Youtube from "./youtube/youtube";
 import Unsplash from "./unsplash/unsplash";
 import Season from "./season/season";
+import Navbar from "./navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 // import Search from "./search";
 // import Translate from "./translate";
 
@@ -49,15 +52,19 @@ const dataDropdown = [
 
 const App = () => {
    return (
-      <div>
-         <Accordion data={accordionData} />
-         <Dropdown data={dataDropdown} />
-         {/* <Translate /> */}
-         {/* <Search /> */}
-         {/* <Youtube /> */}
-         <Unsplash />
-         <Season />
-      </div>
+      <Router>
+         <Navbar />
+         <Routes>
+            {/* <Route path="/" exact element={<Accordion />} /> */}
+            <Route path="/accordion" element={<Accordion />} />
+            <Route path="/dropdown" element={<Dropdown />} />
+            {/* <Route path="/translate" element={Translate} /> */}
+            {/* <Route path="/wiki" element={Search} /> */}
+            <Route path="/youtube" element={<Youtube />} />
+            <Route path="/unsplash" element={<Unsplash />} />
+            <Route path="/weather" element={<Season />} />
+         </Routes>
+      </Router>
    );
 };
 

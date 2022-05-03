@@ -34,7 +34,7 @@ const Unsplash = () => {
    };
 
    return (
-      <div style={{ height: "auto" }}>
+      <div>
          <SearchBar malumotniOl={searchdanMalumotniOl} />
          <ImageList dataImg={imageArr} />
          {imageArr[0] ? <button onClick={loadMore}>Loadmore</button> : ""}

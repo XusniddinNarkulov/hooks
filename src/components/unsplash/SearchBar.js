@@ -14,10 +14,18 @@ const SearchBar = (props) => {
    };
 
    return (
-      <div style={{}}>
-         <form onSubmit={formOnSubmit} className="ui category search">
-            <div className="ui icon input" style={{ width: "100%" }}>
+      <div>
+         <form
+            onSubmit={formOnSubmit}
+            className="ui category search"
+            style={{ margin: "0 auto" }}
+         >
+            <div
+               className="ui icon input"
+               //  style={{ width: "100%", margin: "0 auto" }}
+            >
                <input
+                  // style={{ margin: "0 auto" }}
                   onChange={inputMalumot}
                   className="prompt"
                   type="text"

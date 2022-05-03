@@ -35,6 +35,7 @@ const DisplaySeason = (props) => {
             justifyContent: "space-between",
             padding: "2%",
             height: "90vh",
+            marginTop: "5%",
          }}
       >
          <div
